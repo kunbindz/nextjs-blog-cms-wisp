@@ -1,10 +1,8 @@
 "use client";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { GetPostsResult } from "@/lib/wisp";
 import { formatDate } from "date-fns";
-import Image from "next/image";
 import Link from "next/link";
 import { FunctionComponent } from "react";
 
@@ -15,7 +13,7 @@ export const BlogPostPreview: FunctionComponent<{
     <div className="break-words">
      
         <div className="aspect-[16/9] relative">
-          <iframe src={`https://drive.google.com/file/d/${post.slug}/preview`} loading="lazy" width="100%" height="100%" allow="autoplay"></iframe>
+          <iframe src={`https://drive.google.com/file/d/${post.slug}/preview`} loading="lazy" width="100%" height="100%" allowFullScreen></iframe>
         </div>
       
       <div className="grid grid-cols-1 gap-3 md:col-span-2 mt-4">
@@ -53,15 +51,15 @@ export const BlogPostsPreview: FunctionComponent<{
   className?: string;
 }> = ({ posts, className }) => {
   return (
-    <div
-      className={cn(
-        "grid grid-cols-1 gap-16 lg:gap-28 md:grid-cols-2 md:my-16 my-8",
-        className
-      )}
-    >
-      {posts.map((post) => (
-        <BlogPostPreview key={post.id} post={post} />
-      ))}
-    </div>
+      <div
+        className={cn(
+          "grid grid-cols-1 gap-16 lg:gap-20 md:grid-cols-2 md:my-16 my-8",
+          className
+        )}
+      >
+        {posts.map((post) => (
+          <BlogPostPreview key={post.id} post={post} />
+        ))}
+      </div>
   );
 };

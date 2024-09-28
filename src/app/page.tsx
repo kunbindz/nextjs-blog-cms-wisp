@@ -2,6 +2,7 @@ import { BlogPostsPreview } from "@/components/BlogPostPreview";
 import { BlogPostsPagination } from "@/components/BlogPostsPagination";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { Introduce } from "@/components/Introduce";
 import { ListTags } from "@/components/ListTags";
 import { wisp } from "@/lib/wisp";
 
@@ -17,7 +18,16 @@ const Page = async ({
   return (
     <div className="container mx-auto px-5 mb-10">
       <Header />
+      <Introduce />
       <ListTags tags={tags} />
+      <div className="space-y-2 py-6 md:space-y-5">
+        <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
+          Recent Posts
+        </h1>
+        <p className="!mt-2 text-lg leading-7 text-gray-500 dark:text-gray-400">
+          View a list of my completed products
+        </p>
+      </div>
       <BlogPostsPreview posts={result.posts} />
       <BlogPostsPagination pagination={result.pagination} />
       <Footer />

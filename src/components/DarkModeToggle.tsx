@@ -13,7 +13,7 @@ export const DarkModeToggle = () => {
   }, []);
 
   const toggleDarkMode = () => {
-    setTheme(resolvedTheme === "dark" ? "light" : "dark");
+    setTheme(resolvedTheme === "light" ? "dark" : "light");
   };
 
   // Render nothing on the server
