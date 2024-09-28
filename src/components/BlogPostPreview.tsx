@@ -13,7 +13,7 @@ export const BlogPostPreview: FunctionComponent<{
     <div className="break-words">
      
         <div className="aspect-[16/9] relative">
-          <iframe src={`https://drive.google.com/file/d/${post.slug}/preview`} loading="lazy" width="100%" height="100%" allowFullScreen></iframe>
+          <iframe src={`https://drive.google.com/file/d/${post.slug}/preview`} loading="lazy" width="100%" height="100%" allow="autoplay" allowFullScreen></iframe>
         </div>
       
       <div className="grid grid-cols-1 gap-3 md:col-span-2 mt-4">
