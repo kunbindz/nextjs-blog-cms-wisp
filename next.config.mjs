@@ -7,6 +7,7 @@ const nextConfig = {
         hostname: "imagedelivery.net",
       },
     ],
+    domains: ['fireship.io'],
   },
   redirects: async () => {
     return [];

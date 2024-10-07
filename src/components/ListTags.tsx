@@ -4,7 +4,7 @@ import Link from "next/link";
 
 
 export const ListTags = (tags: {tags: GetTagsResult}) => {
-  const listPopularTags = ['tham-my', 'TVC', 'khai-truong', 'quang-cao', 'thuong-hieu', 'BDS' ]
+  const listPopularTags = ['co-hoc', 'lich-su', 'khai-truong', 'quang-cao', 'thuong-hieu', 'BDS' ]
   return (
       <section className="antialiased">
         <div className="mx-auto max-w-screen-xl 2xl:px-0">

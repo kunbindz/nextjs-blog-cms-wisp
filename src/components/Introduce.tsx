@@ -13,24 +13,19 @@ export const Introduce: FunctionComponent = () => {
           {/* <div className="max-h-[430px] overflow-hidden rounded-md">
             <Image src={'/static/images/avatar.jpg'} alt="avatar" width={430} height={350} />
           </div> */}
-          <div className="mt-10 md:my-auto md:ml-20 flex flex-col text-lg leading-8 text-gray-600 dark:text-gray-400">
+          <div className="mt-10 max-w-2xl md:my-auto md:ml-20 flex flex-col text-lg leading-8 text-gray-600 dark:text-gray-400">
             <h1 className="font-medium">
-              I'm <strong className="text-lg">Xuan Trinh</strong> - an <span className="bg-yellow-400 text-black px-1 py-1 rounded ">Editor</span> <span className="bg-yellow-400 text-black px-1 py-1 rounded ">Camera Operator</span> <span className="bg-yellow-400 text-black px-1 py-1 rounded ">Photographer</span>  in Ha Noi
+              I'm <strong className="text-lg">Xuan Loc</strong> - a <span className="bg-yellow-400 text-black px-1 py-1 rounded ">full-stack developer</span> from Ha Noi
             </h1>
             <div className="mb-4 mt-4">
-              <h3>Kính gửi quý khách hàng.</h3>
-              <p>Tôi là <b>Trinh</b>, chuyên môn của tôi là <b>Quay Phim & Dựng Phim</b></p>
-              <p>Khi đến với tôi, khách hàng có thể hoàn toàn yên tâm về</p>
-              <p><b>CHẤT LƯỢNG SẢN PHẨM</b> tốt nhất với giá cả tốt nhất.</p>
-              <p>Tôi cam kết đáp ứng sự mong đợi của khách hàng bằng những giải pháp tối ưu và đáng tin cậy. </p>
-              <p></p>
+              <p>This is my personal website and blog where I share my thoughts on various topics including tutorials, notes, and personal experiences.</p>
+              <p>I have a passion for technology, history, Eastern philosophy and literature.</p>
+              <p>Explore my site to learn more about my Journey and hope it brings value to you.</p>
             </div>
-              <p><b>Hotline:</b> 0988 54 3596</p>
-              <p><b>Zalo:</b> 0988 54 3596</p>
-           
-            {/* // */}
+            <hr className="border-0 h-[1px] w-1/2  bg-gray-500 my-6" />
+              <strong className="text-lg">Contact me:</strong>
             <div className=" w-full h-auto py-3 flex items-center justify-center gap-4 flex-wrap">
-              <a href="https://www.facebook.com/profile.php?id=61556025660404" target="blank">
+              <a href="https://www.facebook.com/kunbindz" target="blank">
                 <button className="group transition-all duration-500 hover:-translate-y-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 93 92" fill="none">
                   <rect x="1.13867" width="91.5618" height="91.5618" rx="15" fill="#337FFF"/>
@@ -55,7 +50,7 @@ export const Introduce: FunctionComponent = () => {
                 </button>
               </a>
 
-              <a href="mailto:trinhdkz@gmail.com">
+              <a href="mailto:8598loctran@gmail.com">
                 <button className="group transition-all duration-500 hover:-translate-y-2">
                   <svg width="48" height="48" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="0.638672" y="0.5" width="90.5618" height="90.5618" rx="14.5" fill="white" stroke="#C4CFE3"/>
@@ -65,6 +60,11 @@ export const Introduce: FunctionComponent = () => {
                   <path d="M30.4893 45.5227V29.769L45.0311 40.6754L59.5729 29.769V45.5227L45.0311 56.429" fill="#EA4335"/>
                   <path d="M18.3711 31.587V36.4343L30.4893 45.5229V29.7693L27.0962 27.2245C23.4971 24.5282 18.3711 27.0912 18.3711 31.587Z" fill="#C5221F"/>
                   </svg>
+                </button>
+              </a>
+
+              <a href="https://x.com/8598loctran">
+                <button className="group transition-all duration-500 hover:-translate-y-2">
                 </button>
               </a>
             </div>
