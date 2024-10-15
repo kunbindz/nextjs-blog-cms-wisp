@@ -29,7 +29,6 @@ export const RelatedPosts: FunctionComponent<{
                   fill
                   className="h -full min-h-full min-w-full object-cover object-center"
                 />
-                {/* <iframe src={`https://drive.google.com/file/d/${post.slug}/preview`} loading="lazy" width="100%" height="100%" allow="autoplay"></iframe> */}
               </AspectRatio>
             </Link>
             <div className="prose prose-sm dark:prose-invert p-4">
