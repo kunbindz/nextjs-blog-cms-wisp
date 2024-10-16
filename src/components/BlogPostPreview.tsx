@@ -40,7 +40,7 @@ export const BlogPostPreview: FunctionComponent<{
         <div className="prose lg:prose-lg leading-relaxed md:text-lg line-clamp-4 text-muted-foreground">
           {post.description}
         </div>
-        <div className="text-sm text-muted-foreground">
+        <div className="text-sm text-muted-foreground flex">
           {post.tags.map((tag) => (
             // <Badge className="px-2 py-1 mx-1 cursor-pointer" key={tag.id}>
             //   <div className="mr-2 inline-block">
@@ -48,7 +48,7 @@ export const BlogPostPreview: FunctionComponent<{
             //   </div>
             // </Badge>
 
-            <div key={tag.id} className="flex flex-row mb-2 mr-5 mt-2">
+            <div key={tag.id} className="flex flex-row mb-2 mr-2 mt-2">
               <Tag tagName={tag.name} />
             </div>
           ))}
